@@ -3,9 +3,6 @@
 #include <string.h>
 
 #define TAPE_LENGTH 5000
-#define PROGRAM_LENGTH 5000
-// this could be shorter but maybe some dumbass wants a program thats all loops
-#define LOOP_LIST_LENGTH 2500
 #define BF_TOKENS "+-.,<>[]"
 
 char *program;
@@ -138,7 +135,6 @@ int main(int argc, char *argv[]) {
         return 1;
         break;
     }
-    printf("%s\n", program);
 
     init_tape(TAPE_LENGTH);
 
